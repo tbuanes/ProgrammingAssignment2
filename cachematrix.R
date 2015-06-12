@@ -28,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Find inverse of matrix of type makeCacheMatrix
 ## Only calculate inverse if this has not been cached.
 ## Cache inverse if not previously done
-## Return inversed matrix, return NULL matrix if matrix is singular
+## Return inversed matrix, return NaN if matrix is singular
 cacheSolve <- function(x, ...) {
     inverse <- x$getInverse()
     if ( !is.null(inverse) ) {
